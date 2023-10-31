@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+.header {
+  text-align: center;
+}
+.header-title {
+  margin: 26px 0px;
+}
+.header p {
+  width: 500px;
+  color: rgb(96, 93, 93);
+  margin: 0px auto;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  margin: 10px;
+  border-radius: 8px;
+}
+.card:hover .card-image img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.card-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-image img {
+  width: 100%;
+
+  height: 100%;
+  position: absolute;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+.lower-card-area {
+  padding: 30px;
+}
+.avatar {
+  background-color: rgb(230, 225, 225);
+  border-radius: 50%;
+  border: 1px solid rgb(88, 79, 79);
+}
+.avatar img {
+  height: 40px;
+  width: 40px;
+}
+.card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-title {
+  margin: 12px 0px;
+}
+.cart-title h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.cart-title p {
+  color: rgb(121, 121, 123);
+}
+.auther-info {
+  margin-left: 15px;
+}
+.auther-info p:first-child {
+  color: rgb(32, 52, 170);
+}
+.auther-info p {
+  color: rgb(121, 121, 123);
+}
+.footer-right button {
+  background-color: white;
+  border: 1px solid rgb(165, 161, 161);
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: rgb(91, 92, 98);
+  font-size: 12px;
+  cursor: pointer;
+}
+.footer-right button:hover {
+  background-color: gray;
+  color: white;
+}
